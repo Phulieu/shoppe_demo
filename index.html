@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-has-qr header__navbar-item--seperate">
+                            Vào cửa hàng trên ứng dụng Lieux
+                            <div class="header__qr">
+                                <img src="./assets/img/header/QRcode.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr_link">
+                                    <img src="./assets/img/header/gg_play.png" alt="Google Play" class="header__qr-download-img"> 
+                                    </a>
+                                    <a href="" class="header__qr_link">
+                                    <img src="./assets/img/header/appstore.png" alt="Appstore" class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-item-no-pointer">Kết nối</span>
+                            <a href="https://www.facebook.com/phu.lieu.14/" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/phu_lieu/?fbclid=IwAR2OSVRDo0SbMMIsDY65WD3_cDcCz3bIJyn7up9svKFkJ4Jl8zFVwlKo2ZY" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-has-notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="/assets/img/header/notify/1.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm Eucerin chính hãng de xac nhan cho san pham la Lieu Minh Phu</span>
+                                                <span class="header__notify-description">Mô tả sản phẩm la minh ghi dai cho dai len ma no van chua dai nen minnh ghi them cho dai</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="/assets/img/header/notify/2.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm Eucerin chính hãng de xac nhan cho san pham la Lieu Minh Phu</span>
+                                                <span class="header__notify-description">Mô tả sản phẩm la minh ghi dai cho dai len ma no van chua dai nen minnh ghi them cho dai</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="/assets/img/header/notify/3.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm Eucerin chính hãng de xac nhan cho san pham la Lieu Minh Phu</span>
+                                                <span class="header__notify-description"> Mô tả sản phẩm la minh ghi dai cho dai len ma no van chua dai nen minnh ghi them cho dai</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--seperate">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/header/phu1.jpg" alt="User" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Parker Lieu</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header with search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            <img src="./assets/img/header/logo.png" alt="" class="header__logo-image">
+                        </a>
+                    </div>
+                    <div class="header-search">
+                        <!-- Search history -->
+                        <div class="header-search-wrap">
+                            <input type="text" class="header-search-input" placeholder="Tìm kiếm sản phẩm">
+                            <div class="header-search-history">
+                                <h3 class="header-search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header-search-history-list">
+                                    <li class="header-search-history-item">
+                                        <a href="">Liễu Minh Phú</a>
+                                    </li>
+                                    <li class="header-search-history-item">
+                                        <a href="">Canada</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-search-select">
+                            <span class="header-search-select-label">Trong Shop</span>
+                            <i class="header-search-select-icon fa-solid fa-angle-down"></i>
+                            
+                            <ul class="header-search-option">
+                                <li class="header-search-option-item header-search-option-item--active">
+                                    <span>Trong Shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                                <li class="header-search-option-item">
+                                    <span>Ngoài Shop</span>
+                                    <i class="fa-solid fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header-search-btn">
+                            <i class="header-search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="header-cart">
+                        <div class="header-cart-wrap">
+                            <i class="header-cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header-cart-notice">3</span>
+                            <!-- No card :header-cart-list--no-cart  -->
+                            <div class="header-cart-list">
+                                <img src="./assets/img/header/empty-cart.webp" alt="No cart" class="header-cart-list-no-card-img">
+                                <!-- Has card -->
+                                <h4 class="header-cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header-cart-list-item">
+                                    <li class="header-cart-item">
+                                        <img src="./assets/img/header/notify/1.jpg" alt="" class="header-cart-item-img">
+                                        <div class="header-cart-item-info">
+                                            <div class="header-cart-item-head">
+                                                <h5 class="header-cart-item-name">Bộ kem đặc trị Eucerin mình viết cho nó dài ơi là dài để test sản phẩm thôi chứ ko có gì đâu hi vọng là nó đủ dài rồi</h5>
+                                                <div class="header-cart-item-price-wrap">
+                                                    <span class="header-cart-item-price">2.000.000đ</span>
+                                                    <span class="header-cart-multiple">x</span>
+                                                    <Span class="header-cart-item-quantity">1</Span>
+                                                </div>
+                                                </div>
+                                            <div class="header-cart-item-body">
+                                                <span class="header-cart-item-description">Phân loại: Bạc</span>
+                                                <span class="header-cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                        <img src="./assets/img/header/notify/2.jpg" alt="" class="header-cart-item-img">
+                                        <div class="header-cart-item-info">
+                                            <div class="header-cart-item-head">
+                                                <h5 class="header-cart-item-name">Bộ kem đặc trị Eucerin</h5>
+                                                <div class="header-cart-item-price-wrap">
+                                                    <span class="header-cart-item-price">700.000đ</span>
+                                                    <span class="header-cart-multiple">x</span>
+                                                    <Span class="header-cart-item-quantity">1</Span>
+                                                </div>
+                                                </div>
+                                            <div class="header-cart-item-body">
+                                                <span class="header-cart-item-description">Phân loại: Bạc</span>
+                                                <span class="header-cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header-cart-item">
+                                        <img src="./assets/img/header/notify/3.jpg" alt="" class="header-cart-item-img">
+                                        <div class="header-cart-item-info">
+                                            <div class="header-cart-item-head">
+                                                <h5 class="header-cart-item-name">Bộ kem đặc trị Eucerin</h5>
+                                                <div class="header-cart-item-price-wrap">
+                                                    <span class="header-cart-item-price">400.000đ</span>
+                                                    <span class="header-cart-multiple">x</span>
+                                                    <Span class="header-cart-item-quantity">1</Span>
+                                                </div>
+                                                </div>
+                                            <div class="header-cart-item-body">
+                                                <span class="header-cart-item-description">Phân loại: Bạc</span>
+                                                <span class="header-cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <buton class="header-cart-view btn btn--primary">Xem giỏ hàng</buton>
+                            </div> 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <div class="grid">
+                <div class="row app-content">
+                    <div class="c-2">
+                        <nav class="category">
+                            <h3 class="category-heading">
+                                <i class="category-heading-icon fa-solid fa-bars"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item-link">Best seller</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item-link">January</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item-link">Febuary</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item-link">November</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item-link">December</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="c-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter-btn btn">Phổ biến</button>
+                            <button class="home-filter-btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter-btn btn">Bán chạy</button>
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input-icon fa-solid fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="home-filter__page-icon fa-solid fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <div class="row">
+                                <div class="c-2-4">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/649b01ca3d71b6462bead41ec3ce91f4);"></div>
+                                        <h4 class="home-product-item-name">Áo polo nam nữ cổ bẻ có khóa kéo, áo polo nữ chất vải thun xốp phong cách thời trang Hàn Quốc</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">120.000đ</span>
+                                            <span class="home-product-item-price-current">66.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-emty fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">No brand</span>
+                                            <span class="home-product-item-country">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-sale-off-percent">43%</span>
+                                            <span class="home-product-item-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="c-2-4">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/649b01ca3d71b6462bead41ec3ce91f4);"></div>
+                                        <h4 class="home-product-item-name">Áo polo nam nữ cổ bẻ có khóa kéo, áo polo nữ chất vải thun xốp phong cách thời trang Hàn Quốc</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">120.000đ</span>
+                                            <span class="home-product-item-price-current">66.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-emty fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">No brand</span>
+                                            <span class="home-product-item-country">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-sale-off-percent">43%</span>
+                                            <span class="home-product-item-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="c-2-4">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/649b01ca3d71b6462bead41ec3ce91f4);"></div>
+                                        <h4 class="home-product-item-name">Áo polo nam nữ cổ bẻ có khóa kéo, áo polo nữ chất vải thun xốp phong cách thời trang Hàn Quốc</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">120.000đ</span>
+                                            <span class="home-product-item-price-current">66.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-emty fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">No brand</span>
+                                            <span class="home-product-item-country">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-sale-off-percent">43%</span>
+                                            <span class="home-product-item-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="c-2-4">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/649b01ca3d71b6462bead41ec3ce91f4);"></div>
+                                        <h4 class="home-product-item-name">Áo polo nam nữ cổ bẻ có khóa kéo, áo polo nữ chất vải thun xốp phong cách thời trang Hàn Quốc</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">120.000đ</span>
+                                            <span class="home-product-item-price-current">66.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-emty fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">No brand</span>
+                                            <span class="home-product-item-country">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-sale-off-percent">43%</span>
+                                            <span class="home-product-item-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="c-2-4">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/649b01ca3d71b6462bead41ec3ce91f4);"></div>
+                                        <h4 class="home-product-item-name">Áo polo nam nữ cổ bẻ có khóa kéo, áo polo nữ chất vải thun xốp phong cách thời trang Hàn Quốc</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">120.000đ</span>
+                                            <span class="home-product-item-price-current">66.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-emty fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">No brand</span>
+                                            <span class="home-product-item-country">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-sale-off-percent">43%</span>
+                                            <span class="home-product-item-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="c-2-4">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/649b01ca3d71b6462bead41ec3ce91f4);"></div>
+                                        <h4 class="home-product-item-name">Áo polo nam nữ cổ bẻ có khóa kéo, áo polo nữ chất vải thun xốp phong cách thời trang Hàn Quốc</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">120.000đ</span>
+                                            <span class="home-product-item-price-current">66.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-emty fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">No brand</span>
+                                            <span class="home-product-item-country">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-sale-off-percent">43%</span>
+                                            <span class="home-product-item-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="c-2-4">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/649b01ca3d71b6462bead41ec3ce91f4);"></div>
+                                        <h4 class="home-product-item-name">Áo polo nam nữ cổ bẻ có khóa kéo, áo polo nữ chất vải thun xốp phong cách thời trang Hàn Quốc</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">120.000đ</span>
+                                            <span class="home-product-item-price-current">66.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-emty fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">No brand</span>
+                                            <span class="home-product-item-country">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-sale-off-percent">43%</span>
+                                            <span class="home-product-item-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="c-2-4">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/649b01ca3d71b6462bead41ec3ce91f4);"></div>
+                                        <h4 class="home-product-item-name">Áo polo nam nữ cổ bẻ có khóa kéo, áo polo nữ chất vải thun xốp phong cách thời trang Hàn Quốc</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">120.000đ</span>
+                                            <span class="home-product-item-price-current">66.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-emty fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">No brand</span>
+                                            <span class="home-product-item-country">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-sale-off-percent">43%</span>
+                                            <span class="home-product-item-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="c-2-4">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/649b01ca3d71b6462bead41ec3ce91f4);"></div>
+                                        <h4 class="home-product-item-name">Áo polo nam nữ cổ bẻ có khóa kéo, áo polo nữ chất vải thun xốp phong cách thời trang Hàn Quốc</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">120.000đ</span>
+                                            <span class="home-product-item-price-current">66.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-emty fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">No brand</span>
+                                            <span class="home-product-item-country">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-sale-off-percent">43%</span>
+                                            <span class="home-product-item-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="c-2-4">
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item-img" style="background-image: url(https://cf.shopee.vn/file/649b01ca3d71b6462bead41ec3ce91f4);"></div>
+                                        <h4 class="home-product-item-name">Áo polo nam nữ cổ bẻ có khóa kéo, áo polo nữ chất vải thun xốp phong cách thời trang Hàn Quốc</h4>
+                                        <div class="home-product-item-price">
+                                            <span class="home-product-item-price-old">120.000đ</span>
+                                            <span class="home-product-item-price-current">66.000đ</span>
+                                        </div>
+                                        <div class="home-product-item-action">
+                                            <span class="home-product-item-like home-product-item-like--liked">
+                                                <i class="home-product-item-like-icon-emty fa-regular fa-heart"></i>
+                                                <i class="home-product-item-like-icon-fill fa-solid fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item-rating">
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="home-product-item-rating-gold fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item-sold">88 đã bán</span>
+                                        </div>
+                                        <div class="home-product-item-origin">
+                                            <span class="home-product-item-brand">No brand</span>
+                                            <span class="home-product-item-country">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item-favorite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item-sale-off">
+                                            <span class="home-product-item-sale-off-percent">43%</span>
+                                            <span class="home-product-item-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <ul class="pagination home-product-pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    <i class="pagination-item-icon fa-solid fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item-link">
+                                    1
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    2
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    3
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    4
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    5
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    ...
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    14
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    <i class="pagination-item-icon fa-solid fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="row">
+                    <div class="c-2-4">
+                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item__link">Mail: Parkerlieu1999@gmail.com</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-2-4">
+                        <h3 class="footer-heading">Về Lieux</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-2-4">
+                        <h3 class="footer-heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item__link">Sản phẩm</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item__link">Mua bán</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-2-4">
+                        <h3 class="footer-heading">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item__link">
+                                    <i class="footer-list-item__icon fa-brands fa-facebook-square"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item__link">
+                                    <i class="footer-list-item__icon fa-brands fa-instagram-square"></i>
+                                    Instargram
+                                </a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item__link">
+                                    <i class="footer-list-item__icon fa-brands fa-linkedin"></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="c-2-4">
+                        <h3 class="footer-heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer-download">
+                            <img src="./assets/img/header/QRcode.png" alt="QR code" class="footer__qr-img">
+                            <div class="footer-download-apps">
+                                <a href="" class="footer-download-link">
+                                <img src="./assets/img/header/gg_play.png" alt="Google Play" class="footer-download-img"> 
+                                </a>
+                                <a href="" class="footer-download-link">
+                                <img src="./assets/img/header/appstore.png" alt="Appstore" class="footer-download-img">
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="grid">
+                    <p class="footer-copyright">© 2022 -Bản quyền thuộc về Liễu Minh Phú</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal  -->
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__inner"> -->
+                <!-- Register form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Emai của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khảu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đăng kí với Lieux về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials-facebok btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                            Kết nối với Facebook
+                        </a>
+                        <a href="" class="auth-form__socials-google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            Kết nối với Google
+                        </a>
+                    </div>
+                </div> -->
+                <!-- Login form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Emai của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forget">Quên mật khẩu</a>
+                                <span class="auth-form__help-seperate"></span>
+                                <a href="" class="auth-form__help-link ">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials-facebok btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                            Đăng nhập với Facebook
+                        </a>
+                        <a href="" class="auth-form__socials-google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            Đăng nhập với Google
+                        </a>
+                    </div>
+                </div> -->
+        <!-- </div>
+    </div> -->
+</body>
+</html>
